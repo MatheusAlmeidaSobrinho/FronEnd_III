@@ -1,8 +1,7 @@
 import './CampoTexto.css'
 
 export const CampoTexto = props => {
-  const placeholderModificada = `${props.placeholder}...` // chamando por variavel
-  // poderia por direto do input usando ``
+  const placeholderModificada = `${props.placeholder}...`
 
   return (
     <div className="campo-texto">
