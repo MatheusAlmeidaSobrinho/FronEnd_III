@@ -1,4 +1,5 @@
-import './style.css'
+import './style3.scss'
+// import './style3.css'
 
 export function TerceiraAula () {
 
@@ -31,7 +32,8 @@ export function TerceiraAula () {
   ]
 
   return (
-      <main className="mainUm">
+    <div className="batatada">
+      <main>
         <header>
         <h1>Lista Bandas Favoritas Spotify</h1>
         </header>
@@ -47,5 +49,6 @@ export function TerceiraAula () {
             }
         </ul>
       </main>
+      </div>
   )
 }

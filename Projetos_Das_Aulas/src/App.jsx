@@ -1,7 +1,8 @@
 // import { Login } from './aulas/PrimeiraAula/Login'
-// import { Formulario } from './aulas/SegundaAula/Formulario'
-// import { TerceiraAula } from './aulas/TerceiraAula'
 
+import { QuintaAula } from "./aulas/QuintaAula"
+
+// import { Formulario } from './aulas/SegundaAula/Formulario'
 function App() {
 
   return (
@@ -9,6 +10,8 @@ function App() {
       {/* <Login></Login> */}
       {/* <Formulario></Formulario> */}
       {/* <TerceiraAula></TerceiraAula> */}
+      {/* <QuartaAula></QuartaAula> */}
+      <QuintaAula></QuintaAula>
     </>
   )
 }
