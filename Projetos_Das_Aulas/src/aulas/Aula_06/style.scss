@@ -1,0 +1,44 @@
+html{
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.logo {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+
+}
+
+.menu {
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  color: gray;
+}
+
+.menu a:hover {
+  color: orange;
+}
+
+.main img {
+  width: 400px;
+  height: 400px;
+}
