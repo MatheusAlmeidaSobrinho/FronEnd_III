@@ -1,10 +1,10 @@
-import { Aula_06 } from "./aulas/Aula_06"
+import { Aula_07_Mesa } from "./aulas/Aula_07_Mesa"
 
 function App() {
 
   return (
     <>
-      <Aula_06/>
+    <Aula_07_Mesa />
     </>
   )
 }

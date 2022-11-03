@@ -2,7 +2,14 @@ html{
   margin: 0;
   border: 0;
   padding: 0;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
+}
+
+.html {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background-color: white;
 }
 
 .header {
@@ -12,10 +19,26 @@ html{
   align-content: center;
   justify-content: space-around;
   align-items: center;
-  background-color: black;
+  background-color: white;
   margin: 0;
   border: 0;
   padding: 0;
+  height: 60px;
+}
+
+button {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 10px 30px 10px 30px;
+  border-radius: 30px;
+  transition: all 0.4s ease-in-out;
+  color: black;
+}
+
+button:hover {
+  text-shadow: 1px 1px 1px rgb(91, 91, 91);
+  box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.671);
+  cursor: pointer;
 }
 
 .logo {
@@ -24,6 +47,8 @@ html{
   color: white;
 
 }
+
+
 
 .menu {
   font-size: 16px;
@@ -34,11 +59,195 @@ html{
   color: gray;
 }
 
+.menu a {
+  transition: all 0.4s ease-in-out;
+}
+
 .menu a:hover {
   color: orange;
 }
 
-.main img {
-  width: 400px;
-  height: 400px;
+.main {
+  display: flex;
+  width: 100%;
+  height: 800px;
+  background-image:url(./../../assets/images/aulaSeisImagemMain.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.mainCard {
+  margin: 150px;
+  padding: 32px;
+  color: white;
+  display: flex;
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.562);
+  border-radius: 16px;
+  background: rgba(12, 12, 12, 0.6);
+  backdrop-filter: blur(6px);
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.mainCard h1 {
+  font-size: 64px;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.mainCard h2 {
+  font-size: 16px;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.mainCard h3 {
+  color: orange;
+  font-size: 32px;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+
+.newGame {
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+  border: 2px solid rgb(0, 0, 0);
+  color: white;
+  background-color: rgba(51, 51, 51, 0.457);
+  border-radius: 16px;
+}
+
+.imgNewGame img{
+  max-width: 500px;
+  height: 215px;
+  border-radius: 10px;
+}
+
+.textoNewGame {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.flexTextoPrice {
+  display: flex;
+}
+
+.priceNewGame {
+  font-weight: 900;
+  color: orange;
+  font-size: 40px;
+  width: 220px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+  margin: 30px;
+}
+
+.componenteNewGame {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.halloweenGames {
+  display: flex;
+  flex-direction: column;
+  width: 37.5%;
+  justify-content: space-between;
+  border: 2px solid rgb(18, 18, 18);
+  border-radius: 16px;
+  margin: 8px;
+  color: white;
+  background-color: rgba(51, 51, 51, 0.457);
+}
+
+.halloweenGames img {
+  border-radius: 16px;
+}
+
+.componenteHalloween {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxComponenteHalloween {
+ display: flex;
+ justify-content: space-between;
+}
+
+.titleCards {
+  color: white;
+  margin-left:12.5%;
+  margin-top: 3rem;
+}
+
+.textoEsquerdoComponenteHalloween{
+  display: flex;
+  padding-left: 16px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: center;
+  margin: 0;
+}
+
+.textoDireitoComponenteHalloween{
+  display: flex;
+  padding-right: 16px;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0;
+}
+
+.newPriceHalloween {
+  color: orange;
+  font-size: 36px;
+  font-weight: 900;
+  margin: 0;
+}
+
+.componenteEarlyAcess {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.componenteCheapGames {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark-theme{
+  background-color: black;
+  transition: all 0.4s ease-in-out;
+
 }
