@@ -1,19 +1,18 @@
+// Import's
 import { useState } from 'react'
 import { Card } from './Card'
 import './style.scss'
-// Aqui você irá escrever as suas funções de Validação, para verificar se o Formulário foi preenchido corretamente
 
 function App() {
+
+// Const's
   const [name, setName] = useState('')
   const [color, setColor] = useState('')
-
   const [errorForm, setErrorForm] = useState(false)
-  // criar nova const para validação 2
-
+  const [darkTheme, setDarkTheme] = useState(false)
   const [allColors, setAllCards] = useState([])
 
-  const [darkTheme, setDarkTheme] = useState(false)
-
+// Aqui você irá escrever as suas funções de Validação, para verificar se o Formulário foi preenchido corretamente
   function registerColor(event) {
 
       event.preventDefault()
@@ -23,7 +22,7 @@ function App() {
         color: color
       }
 
-      if (color === '' || name === '') {
+      if (color === '' || name === '' || name.length < 3 || color.length < 6) {
 
         setErrorForm(true)
 
@@ -33,8 +32,8 @@ function App() {
 
         setAllCards([...allColors,newRegisterColor])
 
-          setName('')
-          setColor('')
+          setName('').trim()
+          setColor('').trim()
 
       }
 
@@ -50,34 +49,37 @@ function App() {
         <main className={`nona-aula-checkpoint`}>
 
             <div className="tittle">
-                <h1>Color Palette</h1>
+                <h1>Palheta de Cores</h1>
                 <button className='tittle-button' onClick={() => changeTheme()}></button>
             </div>
-            <div className="tittle">
-                <h2>Digite o nome da cor e seu formato 'Hexa', 'Nome em inglês'...</h2>
-            </div>
-            <form className={errorForm ? 'form-error' : ''} onSubmit={event => registerColor(event)}>
 
+            <form className={errorForm ? 'form-error' : ''} onSubmit={event => registerColor(event)}>
+            
                 <div>
-                    <label htmlFor="name">Name:</label>
+                    <label htmlFor="name">Nome:</label>
                     <input id="name" type="text" placeholder='Preencha o campo' value={name} onChange={event => setName(event.target.value)} />
                 </div>
 
                 <div>
-                    <label htmlFor="color">Color:</label>
-                    <input type="color" id="color" name="color" value={color} onChange={event => setColor(event.target.value)} />
+                    <label htmlFor="color">Cor:</label>
+                    <input className="input-color-text" type="text" id="color" name="color" value={color} onChange={event => setColor(event.target.value)} />
                 </div>
 
-                <button className='register-button' type='submit'>Register Pallete</button>
+                <div>
+                    <label htmlFor="color">Cor:</label>
+                    <input className="input-color" type="color" id="color" name="color" value={color} onChange={event => setColor(event.target.value)} />
+                </div>
+
+                <button className='register-button' type='submit'>Adicionar</button>
 
             </form>
-
+            
             {
                 errorForm ? (
-                    <span>Your form contains errors</span>
+                    <span>Por favor, verifique os dados inseridos no formulário</span>
                 ) : null
             }
-
+            <h3>Cores Favoritas</h3>
             <section className='colors'>
                 {
                     allColors.map(
