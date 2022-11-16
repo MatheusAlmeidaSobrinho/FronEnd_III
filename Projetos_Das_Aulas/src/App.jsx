@@ -1,11 +1,11 @@
-import { Aula_09_Checkpoint } from "./aulas/Aula_09_Checkpoint"
+import { Aula_13_Mesa } from "./aulas/Aula_13_Mesa"
 
 
 function App() {
 
   return (
     <>
-    <Aula_09_Checkpoint/>
+    <Aula_13_Mesa></Aula_13_Mesa>
     </>
   )
 }
