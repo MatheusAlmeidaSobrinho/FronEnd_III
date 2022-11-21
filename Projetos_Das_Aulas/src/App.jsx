@@ -1,11 +1,11 @@
-import { Aula_13_Mesa } from "./aulas/Aula_13_Mesa"
+import { DecimaQuartaAula } from "./aulas/DecimaQuartaAula"
 
 
 function App() {
 
   return (
     <>
-    <Aula_13_Mesa></Aula_13_Mesa>
+    <DecimaQuartaAula />
     </>
   )
 }
