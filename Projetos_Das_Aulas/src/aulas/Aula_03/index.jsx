@@ -1,7 +1,7 @@
 import './style3.scss'
 // import './style3.css'
 
-export function TerceiraAula () {
+export function Aula_03 () {
 
   const componentes = 
   [

@@ -117,16 +117,16 @@ const cheapGames = [
     }
 ]
 
-const [darkTheme, setDarkTheme] = useState(false)
+const [darkTheme, setDarkTheme] = useState(true)
 
 function changeTheme() {
   setDarkTheme(!darkTheme)
 }
 
   return(
-    <div className={`html ${darkTheme ? 'dark-theme' : ''}`}>
-      <div className={`header ${darkTheme ? 'dark-theme' : ''}`}>
-        <div className={`logo ${darkTheme ? 'dark-theme' : ''}`}>
+    <div className={`html ${darkTheme ? 'dark-theme-aula-6' : ''}`}>
+      <div className={`header ${darkTheme ? 'dark-theme-aula-6' : ''}`}>
+        <div className={`logo ${darkTheme ? 'dark-theme-aula-6' : ''}`}>
         <button onClick={() => changeTheme()}>Mudar Tema</button>
         </div>
         <div className="menu">

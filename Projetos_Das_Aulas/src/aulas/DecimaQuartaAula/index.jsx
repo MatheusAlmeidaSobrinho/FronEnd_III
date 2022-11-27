@@ -11,7 +11,7 @@ export function DecimaQuartaAula() {
 
     function deleteRegisterFromList() {
 
-        
+        // aqui teria a logica para deletar o card, ou seja atraves do pai
 
     }
 
@@ -36,7 +36,7 @@ export function DecimaQuartaAula() {
                                         <DecimaQuartaAulaItem
                                             key={register.id}
                                             registerData={register}
-                                            deleteRegister={(registerReturned) => deleteRegisterFromList(registerReturned)}
+                                            deleteRegister={registerReturned => deleteRegisterFromList(registerReturned)}
                                         />
                                     )
                                 }

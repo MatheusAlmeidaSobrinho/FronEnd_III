@@ -2,7 +2,7 @@ import './style4.scss'
 import youtubeImage from './../../assets/images/imgAleatoriaDoYoutube.png'
 import ivinem from './../../assets/images/ivinem.png'
 
-export function QuartaAula () {
+export function Aula_04 () {
 
   const componentesEncontrados = [
     {

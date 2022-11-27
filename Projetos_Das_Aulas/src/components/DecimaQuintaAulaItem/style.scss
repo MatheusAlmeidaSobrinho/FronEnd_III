@@ -1,9 +1,10 @@
 .decima-quinta-aula-item {
 
-    width: 100%;
+    width: 220px;
     max-width: calc(50% - 12px);
     padding: 42px;
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 4px;
     background-color: #303030;

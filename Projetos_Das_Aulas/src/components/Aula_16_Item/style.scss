@@ -1,0 +1,29 @@
+.decima-sexta-aula-item {
+
+  width: fit-content;
+  padding: 12px;
+  display: flex;
+  gap: 4px;
+  background-color: #303030;
+  border-radius: 12px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  text-align: justify;
+  margin: 12px;
+
+  .setor-IdAndUser {
+    width: 100%;
+    margin: 0 10px;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    color: rgb(34, 198, 210);
+    gap: 2rem;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.25rem;
+  }
+}

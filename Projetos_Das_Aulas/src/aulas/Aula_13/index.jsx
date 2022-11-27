@@ -1,11 +1,15 @@
 import { useState, useEffect } from 'react'
 import './../Aula_13/style.scss'
+import { Link, useParams } from 'react-router-dom'
 
 export function Aula_13() {
 
   const [contador, setContador] = useState(0)
 
   const [userName, setUserName] = useState('')
+
+  const {id} = useParams()
+  console.log(id)
 
   function adicionar() {
     setContador(contador + 1)

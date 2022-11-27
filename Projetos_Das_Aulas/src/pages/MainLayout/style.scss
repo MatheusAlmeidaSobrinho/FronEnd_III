@@ -1,0 +1,146 @@
+.main-layout-component {
+
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+
+  .main-layout-component-header {
+
+    background-color: #404040;
+    padding: 1rem;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+  .headerLogo {
+
+    h1 {
+      font-size: 3rem;
+      padding: 0;
+      border: 0;
+      margin: 0;
+    }
+
+  }
+
+  .headerButtons {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    a {
+      font-size: 18px;
+      padding: 10px 20px;
+      letter-spacing: 2px;
+      color: white;
+      text-decoration: none;
+      background-color: rgb(212, 104, 47);
+      border-radius: 1rem;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+      box-shadow: 3px 3px 6px rgba(255, 123, 0, 0.534)
+      }
+    }
+
+  }
+
+  .navAndMain {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .main-layout-component-main {
+
+      width: 90vw;
+      background-color: #505050;
+      padding: 42px;
+      border-radius: 10px;
+
+  }
+
+  .navBar {
+    border: 0;
+    margin: 0;
+    display: flex;
+    width: 10vw;
+    text-decoration: none;
+    background-color: #505050;
+    padding: 2rem;
+    border-radius: 10px;
+    height: auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+
+    align-items: flex-start;
+
+    h2 {
+      padding: 10px 0;
+      border: 0;
+      margin: 0;
+    }
+
+    ul{
+      list-style: none;
+      padding: 0;
+      border: 0;
+      margin: 0;
+      padding-bottom: 1rem;
+    }
+
+    li {
+      border: 0;
+      margin: 6px;
+      padding: 4px 8px;
+      background-color: rgba(101, 101, 101, 0.817);
+      border-bottom: 3px rgba(198, 198, 198, 0.854) solid;
+      border-radius: 6px;
+      width: fit-content;
+      transition: all 0.3s ease-in-out;
+    }
+
+    li:hover {
+      background-color: rgb(56, 56, 56);
+      border-bottom: 3px solid rgb(212, 104, 47); ;
+    }
+
+    a {
+      
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .navBar {
+
+      width: 17vw;
+    }
+    .main-layout-component-main {
+
+      width: 60vw;
+    }
+
+    .headerLogo {
+
+      h1 {
+        font-size: 2rem;
+      }
+  
+    }
+  }
+
+}
