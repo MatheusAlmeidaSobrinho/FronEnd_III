@@ -13,6 +13,7 @@ export function Aula_16() {
       response => {
         response.json().then(json => {
           if (json.id == undefined) {
+            alert(`O post com id ${post} não existe`)
             // setErrorForm(true)
             console.log('DEU RUIM')
           } else {

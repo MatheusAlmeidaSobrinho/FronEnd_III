@@ -4,11 +4,12 @@
     max-width: calc(50% - 12px);
     padding: 42px;
     display: flex;
-    align-items: center;
-    flex-direction: column;
     gap: 4px;
     background-color: #303030;
     border-radius: 12px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: justify;
 
     address {
 
